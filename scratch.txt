@@ -1,0 +1,392 @@
+## index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luxelectric</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container nav">
+      <div class="logo">
+        <span class="bolt">⚡</span>
+        <div>
+          <h2>LUXELECTRIC</h2>
+          <p>PREMIUM ELECTRICAL SERVICES</p>
+        </div>
+      </div>
+
+      <nav>
+        <a href="#">Home</a>
+        <a href="#services">Services</a>
+        <a href="#">About</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+      </nav>
+
+      <a href="#" class="quote-btn">GET A QUOTE</a>
+    </div>
+  </header>
+
+  <section class="hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+      <div class="hero-text">
+
+        <span class="eyebrow">PREMIUM ELECTRICAL SOLUTIONS</span>
+
+        <h1>
+          Powering Luxury.<br>
+          <span>Delivering Excellence.</span>
+        </h1>
+
+        <p>
+          High-end electrical services for discerning homes and businesses.
+          Quality. Safety. Precision.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#" class="primary-btn">GET A QUOTE</a>
+          <a href="#services" class="secondary-btn">OUR SERVICES →</a>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <section class="services" id="services">
+    <div class="container">
+
+      <div class="section-title">
+        <span>OUR SERVICES</span>
+        <h2>Electrical solutions, elevated.</h2>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="icon">⌂</div>
+          <h3>Residential Electrical</h3>
+          <p>
+            Bespoke electrical solutions for luxury homes and renovations.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="icon">▣</div>
+          <h3>Commercial Electrical</h3>
+          <p>
+            Reliable, efficient systems for premium businesses and workplaces.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="icon">◉</div>
+          <h3>Lighting Design</h3>
+          <p>
+            Architectural lighting design and installation that enhances every detail.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="icon">⚡</div>
+          <h3>Safety & Compliance</h3>
+          <p>
+            Ensuring your property meets the highest safety standards.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="services-button-wrap">
+        <a href="#" class="outline-btn">VIEW ALL SERVICES</a>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>
+```
+
+---
+
+## styles.css
+
+```css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #0d273e;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* HERO */
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding: 80px 0;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: -200px;
+  right: -200px;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(178, 144, 72, 0.25), transparent 70%);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+  align-items: center;
+}
+
+.eyebrow {
+  color: #b29048;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 0.85rem;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  line-height: 1.05;
+  font-weight: 300;
+  margin-bottom: 30px;
+  max-width: 700px;
+}
+
+.hero p {
+  color: rgba(255,255,255,0.75);
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  max-width: 560px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 16px 30px;
+  border-radius: 14px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  display: inline-block;
+}
+
+.btn-primary {
+  background: #b29048;
+  color: #0d273e;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  border: 1px solid rgba(178, 144, 72, 0.5);
+  color: #ffffff;
+}
+
+.btn-secondary:hover {
+  border-color: #b29048;
+  background: rgba(255,255,255,0.05);
+}
+
+.hero-image {
+  position: relative;
+}
+
+.hero-image::before {
+  content: "";
+  position: absolute;
+  inset: -20px;
+  border: 1px solid rgba(178, 144, 72, 0.25);
+  border-radius: 32px;
+}
+
+.hero-image img {
+  border-radius: 28px;
+  height: 650px;
+  width: 100%;
+  object-fit: cover;
+  box-shadow: 0 40px 80px rgba(0,0,0,0.4);
+  position: relative;
+  z-index: 2;
+}
+
+/* SERVICES */
+
+.services {
+  padding: 120px 0;
+  background: rgba(0,0,0,0.12);
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.section-heading h2 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.section-heading p {
+  max-width: 700px;
+  margin: 0 auto;
+  color: rgba(255,255,255,0.7);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.service-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 24px;
+  padding: 40px;
+  transition: 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(178, 144, 72, 0.5);
+}
+
+.service-number {
+  color: #b29048;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 18px;
+  font-weight: 500;
+}
+
+.service-card p {
+  color: rgba(255,255,255,0.7);
+}
+
+/* CTA */
+
+.cta {
+  padding: 120px 0;
+}
+
+.cta-box {
+  background: linear-gradient(135deg, rgba(255,255,255,0.05), rgba(178,144,72,0.08));
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 32px;
+  padding: 80px 50px;
+  text-align: center;
+}
+
+.cta-box h2 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.cta-box p {
+  color: rgba(255,255,255,0.7);
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+footer {
+  padding: 40px 0;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  text-align: center;
+  color: rgba(255,255,255,0.5);
+  font-size: 0.95rem;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 992px) {
+  .hero-content,
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-image img {
+    height: 500px;
+  }
+
+  .hero {
+    padding-top: 120px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .service-card,
+  .cta-box {
+    padding: 30px;
+  }
+}
+```

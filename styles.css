@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Globals */
+body {
+  width: 100%;
+  font-size: 18px;
+  color: #f4f7f5;
+  background-color: #0d273e;
+  width: 100%;
+  overflow-x: hidden;
+}
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.4em;
+}
+h1,
+h2,
+h3 {
+  color: #b29048;
+  font-family: "Sree Krushnadevaraya", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+a {
+  color: #b29048;
+}
+a:visited {
+  color: #b29048;
+}
+p,
+span {
+  font-family: "Forum", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 300,
+    "GRAD" 0,
+    "opsz" 24;
+  color: #b29048;
+  font-size: 36px;
+}
+/* Nav bar */
+header {
+  position: relative;
+}
+nav {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 2px #b29048;
+  width: 100%;
+  position: relative;
+}
+#logo {
+  width: 50px;
+  margin: 0 15px 0 15px;
+}
+#logo-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#menu-btn {
+  width: 40px;
+  background-color: transparent;
+  margin: 0 15px;
+  border: none;
+}
+/* Hero */
+#hero_text {
+  width: 55%;
+  text-align: right;
+  justify-self: end;
+  margin-right: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  align-items: end;
+  padding: 6px 0 6px 0;
+}
+#quote-btn {
+  background-color: #b29048;
+  color: #f4f7f5;
+  text-decoration: none;
+  width: 50%;
+  padding: 4px;
+  text-align: center;
+  justify-self: right;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  width: auto;
+  font-size: larger;
+  font-weight: 500;
+}
+
+#hero {
+  background-image:
+    linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(13, 39, 62, 1) 70%),
+    url("https://images.unsplash.com/photo-1735387155003-6982cc42c79b?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 100%;
+}
+
+/* Menu */
+#menu-container {
+  width: 42%;
+  padding: 5px 12px;
+  justify-self: end;
+  z-index: 999;
+  background-color: #0d273e;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  transform-origin: top;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+ 
+}
+
+.menu_item {
+  text-decoration: none;
+  width: auto;
+  
+}
+.menu-icon{
+  width:32px;
+
+}
+
+/* Cards */
+#cards {
+  width: 350px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin:auto;
+  margin-top: 30px;
+ 
+}
+.registered {
+  background-color: #f4f7f5;
+  width: 160px;
+  height: 130px;
+  border-radius: 10px;
+  border: solid 3px #b29048;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+.registered img {
+  width: 90%;
+}
+/* Animations */
+
+.hidden {
+  display: none;
+}
+@keyframes open-menu {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes close-menu {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+.open-menu {
+  animation: open-menu 0.5s ease-in-out 0s 1 normal forwards;
+}
+.close-menu {
+  animation: close-menu 0.5s ease-in-out 0s 1 normal forwards;
+}
+
+#facebook {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+position: relative;
+margin:20px 0 70px 25px;
+}
+#facebook-container{
+border:none;
+  display: block;
+  
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  border-top: solid 2px #b29048;
+  width: 100%;
+  text-align: center;
+  background-color: #0d273e;
+}
+#fb-header {
+  text-align: center;
+}
+#about {
+  width: 80%;
+  margin: auto;
+  margin-top: 60px;
+}
+
+#floating-contact {
+  background-color: #0d273e;
+  width: 155px;
+  padding: 10px;
+  height: 60px;
+  border: 3px solid #b29048;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 40px;
+  position: fixed;
+  right: 30px;
+  bottom: 40px;
+  text-decoration: none;
+  font-size: 2em;
+}
+
+#floating-icon {
+  margin: 0;
+  height: 100%;
+}
+#call-btn-text {
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 10px;
+  color: #b29048;
+}
+
+/* Tablet portrait */
+@media (min-width: 600px) {
+  #menu-container {
+    width: 25%;
+  }
+#facebook-container{
+  left:22%;
+}
+}
+
+/* Landscape Tablet & Desktop */
+@media (min-width: 900px) {
+
+  #hero {
+    height: 500px;
+    width: 80%;
+    margin: auto;
+  }
+#facebook-container{
+  left:30%;
+}
+}
