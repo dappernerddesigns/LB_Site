@@ -75,6 +75,7 @@ nav {
   background-color: transparent;
   margin: 0 15px;
   border: none;
+  cursor: pointer;
 }
 /* Hero */
 #hero_text {
