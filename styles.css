@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-    outline: 1px solid red;
 }
 /* Globals */
 body {
@@ -78,21 +77,11 @@ nav {
   border: none;
   cursor: pointer;
 }
-#menu{
-  cursor:pointer;}
-/* Hero */
-#hero_text {
-  width: 55%;
-  text-align: right;
-  justify-self: end;
-  margin-right: 12px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  align-items: end;
-  padding: 6px 0 6px 0;
+#menu {
+  cursor: pointer;
 }
+/* Hero */
+
 #quote-btn {
   background-color: #b29048;
   color: #f4f7f5;
@@ -119,8 +108,22 @@ nav {
   background-repeat: no-repeat;
   height: 200px;
   width: 100%;
-}
+  display:flex;
+  flex-direction: column;
+  align-items: end;
 
+}
+#hero_text {
+  width: 55%;
+  text-align: right;
+  margin-right: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  align-items: end;
+  padding: 6px 0 6px 0;
+}
 /* Menu */
 #menu-container {
   width: 42%;
@@ -140,17 +143,14 @@ li {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
- 
 }
 
 .menu_item {
   text-decoration: none;
   width: auto;
-  
 }
-.menu-icon{
-  width:32px;
-
+.menu-icon {
+  width: 32px;
 }
 
 /* Cards */
@@ -160,9 +160,8 @@ li {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin:auto;
+  margin: auto;
   margin-top: 30px;
- 
 }
 .registered {
   background-color: #f4f7f5;
@@ -218,13 +217,12 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-position: relative;
-margin:20px 0 70px 25px;
+  position: relative;
+  margin: 20px 0 70px 25px;
 }
-#facebook-container{
-border:none;
+#facebook-container {
+  border: none;
   display: block;
-  
 }
 footer {
   position: fixed;
@@ -277,20 +275,19 @@ footer {
   #menu-container {
     width: 25%;
   }
-#facebook-container{
-  left:22%;
-}
+  #facebook-container {
+    left: 22%;
+  }
 }
 
 /* Landscape Tablet & Desktop */
 @media (min-width: 900px) {
-
   #hero {
     height: 500px;
     width: 80%;
     margin: auto;
   }
-#facebook-container{
-  left:30%;
-}
+  #facebook-container {
+    left: 30%;
+  }
 }
