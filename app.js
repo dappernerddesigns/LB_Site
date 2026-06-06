@@ -10,18 +10,15 @@ const menuItems = document.getElementsByClassName("menu_item");
 let isOpen = false;
 const toggleMenu = () => {
   if (!isOpen) {
-
     menuList.classList.remove("hidden");
     menuList.classList.remove("close-menu");
     menuList.classList.add("open-menu");
 
     isOpen = true;
   } else {
-  
     menuList.classList.remove("open-menu");
     menuList.classList.add("close-menu");
 
-   
     menuList.addEventListener(
       "animationend",
       () => {
@@ -45,8 +42,13 @@ for (const item of menuItems) {
 
 const fbContainer = document.getElementById("facebook-container");
 
-addEventListener("resize", () => {
+const resizeFacebook = () => {
   if (window.innerWidth <= 500) {
     fbContainer.width = "380";
+  } else {
+    fbContainer.width = "500";
   }
-});
+};
+
+resizeFacebook(); // run immediately
+window.addEventListener("resize", resizeFacebook);
