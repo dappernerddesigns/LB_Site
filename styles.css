@@ -78,6 +78,8 @@ nav {
   border: none;
   cursor: pointer;
 }
+#menu{
+  cursor:pointer;}
 /* Hero */
 #hero_text {
   width: 55%;
