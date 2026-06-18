@@ -13,10 +13,13 @@ body {
   overflow-x: hidden;
 }
 h1 {
-  font-size: 2em;
+  font-size: 3rem;
 }
 h2 {
-  font-size: 1.4em;
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
 }
 h1,
 h2,
@@ -65,10 +68,11 @@ nav {
   width: 50px;
   margin: 0 15px 0 15px;
 }
-#logo-wrapper {
+.logo-wrapper {
   display: flex;
   flex-direction: row;
   align-items: center;
+  width: fit-content
 }
 #menu-btn {
   width: 40px;
@@ -100,29 +104,31 @@ nav {
 
 #hero {
   background-image:
-    linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(13, 39, 62, 1) 70%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(13, 39, 62, 1) 60%),
     url("https://images.unsplash.com/photo-1735387155003-6982cc42c79b?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 200px;
+  height: 550px;
   width: 100%;
-  display:flex;
-  flex-direction: column;
-  align-items: end;
-
-}
-#hero_text {
-  width: 55%;
-  text-align: right;
-  margin-right: 12px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  align-items: end;
+  justify-content: flex-end;
+  align-items:center;
+}
+#hero_text {
+  width: 100%;
+  text-align: center;
+  margin-right: 12px;
+  display: flex;
+
   padding: 6px 0 6px 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
 }
 /* Menu */
 #menu-container {
@@ -240,6 +246,9 @@ footer {
   margin: auto;
   margin-top: 60px;
 }
+#blurb{
+  margin-bottom: 30px;
+}
 
 #floating-contact {
   background-color: #0d273e;
@@ -288,6 +297,9 @@ footer {
     margin: auto;
   }
   #facebook-container {
-    left: 30%;
+    left: 40%;
+  }
+  #about{
+    width:50%;
   }
 }
