@@ -5,6 +5,7 @@ const yearSpan = document.getElementById("year");
 yearSpan.innerText = year;
 
 const menuList = document.getElementById("menu-container");
+menuList.style.width = "fit-content";
 const menuBtn = document.getElementById("menu-btn");
 const menuItems = document.getElementsByClassName("menu_item");
 let isOpen = false;

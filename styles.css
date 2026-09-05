@@ -72,7 +72,7 @@ nav {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: fit-content
+  width: fit-content;
 }
 #menu-btn {
   width: 40px;
@@ -115,7 +115,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  align-items:center;
+  align-items: center;
 }
 #hero_text {
   width: 100%;
@@ -157,6 +157,7 @@ li {
 }
 .menu-icon {
   width: 32px;
+  margin-left: 12px;
 }
 
 /* Cards */
@@ -246,7 +247,7 @@ footer {
   margin: auto;
   margin-top: 60px;
 }
-#blurb{
+#blurb {
   margin-bottom: 30px;
 }
 
@@ -292,8 +293,8 @@ footer {
 /* Landscape Tablet & Desktop */
 @media (min-width: 900px) {
   h1 {
-  font-size: 3rem;
-}
+    font-size: 3rem;
+  }
   #hero {
     height: 500px;
     width: 80%;
@@ -302,7 +303,7 @@ footer {
   #facebook-container {
     left: 40%;
   }
-  #about{
-    width:50%;
+  #about {
+    width: 50%;
   }
 }
